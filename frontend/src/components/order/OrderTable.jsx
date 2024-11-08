@@ -36,7 +36,11 @@ const OrderTable = () => {
         let filtered = [...orders];
 
         if (filterDate) {
-            filtered = filtered.filter((order) => order.date === filterDate);
+            filtered = filtered.filter((order) => {
+                const orderDate = new Date(order.date);
+                const formattedOrderDate = orderDate.toISOString().split('T')[0];
+                return formattedOrderDate === filterDate;
+            });
         }
 
         if (filterStatus) {
