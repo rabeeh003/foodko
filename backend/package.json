@@ -2,9 +2,11 @@
   "name": "foodko",
   "version": "1.0.0",
   "description": "api for frontend",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "build": "echo 'No build step required for backend-only Node app'"
   },
   "author": "rabeeh",
   "license": "ISC",

@@ -5,6 +5,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Dashboard from './pages/Dashboard'
+import OrderListPage from './pages/OrderListPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Dashboard />} />
+          <Route path='orders' element={<OrderListPage />} />
           {/* <Route path="blogs" element={<Blogs />} /> */}
         </Route>
       </Routes>

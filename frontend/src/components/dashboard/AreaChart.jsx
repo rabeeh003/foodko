@@ -13,7 +13,7 @@ const ordersData = [
 
 const AreaChartComponent = () => {
   return (
-    <div className="p-4 bg-white shadow-md rounded-lg">
+    <div className="p-4 shadow-md rounded-lg">
       <div className="flex justify-between">
         <span>
           <p className="text-lg font-semibold">Chart Order </p>
